@@ -1,0 +1,20 @@
+{
+  "name": "add-mentioned-pr-action",
+  "version": "0.1.0",
+  "description": "A GitHub Action for adding the mentioned pull request to an issue",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && ncc build -m -s"
+  },
+  "author": "lostfind",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/github": "^5.1.1",
+    "typescript": "^5.0.2"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "0.36.1"
+  }
+}

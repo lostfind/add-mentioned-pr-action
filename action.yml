@@ -1,0 +1,9 @@
+name: "Add mentioned PR to issue"
+description: "A GitHub Action to add the mentioned pull request to an issue."
+inputs:
+  repo-token:
+    description: "A token of the repository. It can be passed with `{{ secrets.GITHUB_TOKEN }}`."
+    required: true
+runs:
+  using: "node16"
+  main: "dist/index.js"
